@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" ng-app="Twitter">
+<head>
+  <meta charset="utf-8">
+  <title><%= title %></title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='/stylesheets/TweetList.css' />
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-resource.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-sanitize.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+	<script src="//platform.twitter.com/widgets.js"></script>
+	<script src="/javascripts/TweetList.js"></script>
+
+</head>
+<body>
+	<!-- the root element of the view assigned to the TweetList javascript controller-->
+	<div class="container-fluid" ng-controller="TweetList">
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h1><img id="twitter-logo" src="images/Twitter_logo_white.png" /><%= title %></h1>
+			</div>
+		</div>
+        <div class="search-background">
+            <div id="search-container" class="row">
+                <div class="col-lg-4">
+                    <!-- this form will trigger the getTweets function in the javascript controller on submit -->
+                    <form class="input-group" ng-submit="getTweets()" >
+                        <span class="input-group-addon">@</span>
+                        <!-- this text input is binded to a variable in the javascript controller -->
+                        <input type="text" class="form-control" placeholder="TwitterDev" ng-model="username">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Buscar</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-4 tweet-list">
+                    <button ng-repeat="tweet in tweetsResult" class="tweet-item" id="{{tweet.user.screen_name}}">
+                       <!--<div ng-bind-html="tweet.oEmbed.html"></div>-->
+                        <h4>{{tweet.user.screen_name}}</h4>
+                        <p>{{tweet.text}}</p>
+                    </button>
+                    <!-- this button will trigger the getMoreTweets function in the javascript controller -->
+		  	    <button type="button" class="load-more-btn btn btn-default" ng-click="getMoreTweets()">Ver M&aacute;s Mensajes</button>
+                    </div>
+                <div class="col-md-8">
+                    
+                </div>
+            </div>
+    </div>
+</body>
+</html>

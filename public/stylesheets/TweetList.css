@@ -1,0 +1,27 @@
+body {
+    height: 100%;
+ 	background: -moz-linear-gradient(top, #4099FF, #062242);
+ 	background: -ms-linear-gradient(top, #4099FF, #062242);
+ 	background: -webkit-linear-gradient(top, #999, #333);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.tweet-list {
+    height: 80vh;
+    overflow: auto;
+}
+.tweet-item {
+    width: 100%;
+    text-align: left;
+}
+
+.search-background {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkgray;
+}
+
+.load-more-btn {
+    width: 100%;
+}
