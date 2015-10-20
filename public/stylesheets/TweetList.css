@@ -25,3 +25,11 @@ body {
 .load-more-btn {
     width: 100%;
 }
+
+.contenedor-respuesta {
+    padding-left: 0;
+}
+
+.respuesta-box {
+    height: 70vh;
+}

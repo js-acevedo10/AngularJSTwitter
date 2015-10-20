@@ -1,50 +1,37 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'restart' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
 2 info using npm@2.14.7
 3 info using node@v4.2.1
-4 verbose run-script [ 'prerestart',
-4 verbose run-script   'prestop',
-4 verbose run-script   'stop',
-4 verbose run-script   'poststop',
-4 verbose run-script   'restart',
-4 verbose run-script   'prestart',
-4 verbose run-script   'start',
-4 verbose run-script   'poststart',
-4 verbose run-script   'postrestart' ]
-5 info prerestart sample-angular-node@0.0.1
-6 info prestop sample-angular-node@0.0.1
-7 info stop sample-angular-node@0.0.1
-8 info poststop sample-angular-node@0.0.1
-9 info restart sample-angular-node@0.0.1
-10 info prestart sample-angular-node@0.0.1
-11 info start sample-angular-node@0.0.1
-12 verbose unsafe-perm in lifecycle true
-13 info sample-angular-node@0.0.1 Failed to exec start script
-14 verbose stack Error: sample-angular-node@0.0.1 start: `node app.js`
-14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
-14 verbose stack     at emitTwo (events.js:87:13)
-14 verbose stack     at EventEmitter.emit (events.js:172:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-14 verbose stack     at emitTwo (events.js:87:13)
-14 verbose stack     at ChildProcess.emit (events.js:172:7)
-14 verbose stack     at maybeClose (internal/child_process.js:818:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-15 verbose pkgid sample-angular-node@0.0.1
-16 verbose cwd /Users/JuanSantiagoAcev/Documents/APPS/sample-angular-node
-17 error Darwin 15.0.0
-18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "restart"
-19 error node v4.2.1
-20 error npm  v2.14.7
-21 error code ELIFECYCLE
-22 error sample-angular-node@0.0.1 start: `node app.js`
-22 error Exit status 1
-23 error Failed at the sample-angular-node@0.0.1 start script 'node app.js'.
-23 error This is most likely a problem with the sample-angular-node package,
-23 error not with npm itself.
-23 error Tell the author that this fails on your system:
-23 error     node app.js
-23 error You can get their info via:
-23 error     npm owner ls sample-angular-node
-23 error There is likely additional logging output above.
-24 verbose exit [ 1, true ]
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart sample-angular-node@0.0.1
+6 info start sample-angular-node@0.0.1
+7 verbose unsafe-perm in lifecycle true
+8 info sample-angular-node@0.0.1 Failed to exec start script
+9 verbose stack Error: sample-angular-node@0.0.1 start: `node app.js`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:818:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid sample-angular-node@0.0.1
+11 verbose cwd /Users/JuanSantiagoAcev/GitHub/AngularJSTwitter
+12 error Darwin 15.0.0
+13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+14 error node v4.2.1
+15 error npm  v2.14.7
+16 error code ELIFECYCLE
+17 error sample-angular-node@0.0.1 start: `node app.js`
+17 error Exit status 1
+18 error Failed at the sample-angular-node@0.0.1 start script 'node app.js'.
+18 error This is most likely a problem with the sample-angular-node package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     node app.js
+18 error You can get their info via:
+18 error     npm owner ls sample-angular-node
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

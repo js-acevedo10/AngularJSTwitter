@@ -22,13 +22,13 @@
 	<div class="container-fluid" ng-controller="TweetList">
 
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-md-12">
 				<h1><img id="twitter-logo" src="images/Twitter_logo_white.png" /><%= title %></h1>
 			</div>
 		</div>
         <div class="search-background">
             <div id="search-container" class="row">
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <!-- this form will trigger the getTweets function in the javascript controller on submit -->
                     <form class="input-group" ng-submit="getTweets()" >
                         <span class="input-group-addon">@</span>
@@ -38,6 +38,13 @@
                             <button class="btn btn-default" type="submit">Buscar</button>
                         </span>
                     </form>
+                </div>
+                <div class="col-md-8">
+                    <button class="btn btn-default btnAccion">Accion 1</button>
+                    <button class="btn btn-default btnAccion">Accion 2</button>
+                    <button class="btn btn-default btnAccion">Accion 3</button>
+                    <button class="btn btn-default btnAccion">Accion 4</button>
+                    <button class="btn btn-default btnAccion">Accion 5</button>
                 </div>
             </div>
         </div>
@@ -50,9 +57,9 @@
                     </button>
                     <!-- this button will trigger the getMoreTweets function in the javascript controller -->
 		  	    <button type="button" class="load-more-btn btn btn-default" ng-click="getMoreTweets()">Ver M&aacute;s Mensajes</button>
-                    </div>
-                <div class="col-md-8">
-                    
+                </div>
+                <div class="col-md-8 contenedor-respuesta">
+                    <div class="jumbotron respuesta-box"></div>
                 </div>
             </div>
     </div>
