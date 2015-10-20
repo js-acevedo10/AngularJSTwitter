@@ -1,8 +1,8 @@
 body {
     height: 100%;
- 	background: -moz-linear-gradient(top, #4099FF, #062242);
- 	background: -ms-linear-gradient(top, #4099FF, #062242);
- 	background: -webkit-linear-gradient(top, #999, #333);
+ 	background: -moz-linear-gradient(top, #4099FF, #c0c0c0);
+ 	background: -ms-linear-gradient(top, #4099FF, #c0c0c0);
+ 	background: -webkit-linear-gradient(top, #4099FF, #c0c0c0);
     background-attachment: fixed;
     overflow: hidden;
 }
@@ -31,5 +31,20 @@ body {
 }
 
 .respuesta-box {
+    height: 70vh;
+}
+
+#t1 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 10vh;
+    resize: none;
+}
+
+.contenedor-perfil {
+    padding-left: 0;    
+}
+
+.perfil-box {
     height: 70vh;
 }
